@@ -1,0 +1,548 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+body {
+	height: 80vh;
+	/* padding: 0; */
+	/* margin: 0; */
+	background: #672626;
+	font-family: "Ubuntu", Arial, sans-serif;
+  }
+
+/* -------------------------- Nav ------------------------------ */
+.navorg {
+	/* Header Text */
+	z-index: 2;
+	
+	/* SHIFTS HEADER TEXT ONLY */
+	/* padding: 50vh 0 0 1vw; */
+	/* align-items: start; */
+	/* justify-content: space-between; */
+	justify-content: flex-end;
+	/* To Do: Add padding-right as VH decreases */
+	margin-right: 10vw;
+	
+}
+.nav {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+.navsizing {
+	/* text-align: center; */
+	width:calc(1rem + 6vw);
+	height:calc(1rem + 3vw);
+	font-size:calc(0.3rem + 0.75vw + 0.75vh);
+}
+
+/*  NAV HOVER EFFECTS  */
+.navitem {
+	transition: 0.3s;
+	/* margin-left: 3vw;
+	margin-right: 3vw;
+	padding-left: 3vw;
+	padding-right: 3vw; */
+}
+.navitem:hover {
+	/* navigation text */
+	font-size:calc(0.4rem + 1vw + 1vh);
+	transition: 0.3s;
+	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 20%, #000 50%, rgba(0,0,0,.6) 80%);
+	-webkit-mask-size: 200%;
+	animation: shine 1s infinite;
+}
+/* -------------------------- /Nav ------------------------------ */
+
+/* -------------------------- Shine ------------------------------ */
+/* shine */
+.shine:hover {
+	/* add multi-browser support? */
+	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 2s infinite;
+  }
+  @-webkit-keyframes shine {
+	from {
+		/* add multi-browser support? */
+	  -webkit-mask-position: 150%;
+	}
+	
+	to {
+		/* add multi-browser support? */
+	  -webkit-mask-position: -50%;
+	}
+  }
+/* -------------------------- /Shine ------------------------------ */
+
+/* -------------------------- WelcomePage ------------------------------ */
+  
+/* body text overwrites */
+/* .paragraph {
+	font-size: calc(0.5em + 0.75vw + 0.75vh);
+	font-weight: 400;
+	color: #fcfcfc;
+	text-align: center;
+} */
+
+.body-main {
+	width: 100vw;
+	height: 100vh;
+}
+
+svg.intro {
+	background: linear-gradient(135deg, #b13b3b, #6b1c1c);
+	/* margin: 25vh 30vw; */
+	width: 70vw;
+	height: 60vh;
+	/* max-width: 800px; */
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	box-shadow: 0 30px 50px -20px #420606;
+  }
+  svg.intro .text {
+	display: none;
+  }
+  svg.intro.go .text {
+	font-family: Arial, sans-serif;
+	font-size: calc(1vh+2vw);
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+  }
+  svg.intro.go .text-stroke {
+	fill: none;
+	stroke: #6f2525;
+	stroke-width: calc(.25vh + .5vw);
+	stroke-dashoffset: -900;
+	stroke-dasharray: 900;
+	stroke-linecap: butt;
+	stroke-linejoin: round;
+	-webkit-animation: dash 2.5s ease-in-out forwards;
+			animation: dash 2.5s ease-in-out forwards;
+  }
+  svg.intro.go .text-stroke:nth-child(2) {
+	-webkit-animation-delay: 0.3s;
+			animation-delay: 0.3s;
+  }
+  svg.intro.go .text-stroke:nth-child(3) {
+	-webkit-animation-delay: 0.9s;
+			animation-delay: 0.9s;
+  }
+  svg.intro.go .text-stroke-2 {
+	stroke: #ffffff;
+	-webkit-animation-delay: 1.2s;
+			animation-delay: 1.2s;
+  }
+  svg.intro.go .text-stroke:nth-child(5) {
+	-webkit-animation-delay: 1.5s;
+			animation-delay: 1.5s;
+  }
+  svg.intro.go .text-stroke:nth-child(6) {
+	-webkit-animation-delay: 1.8s;
+			animation-delay: 1.8s;
+  }
+  
+  @-webkit-keyframes dash {
+	100% {
+	  stroke-dashoffset: 0;
+	}
+  }
+  
+  @keyframes dash {
+	100% {
+	  stroke-dashoffset: 0;
+	}
+  }
+  .reload {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background: #fff;
+	border: none;
+	border-radius: 20px;
+	outline: none !important;
+	font-size: 11px;
+	line-height: 1.5;
+	padding: 8px 12px;
+	text-transform: uppercase;
+	z-index: 10;
+	cursor: pointer;
+	box-shadow: 0 6px 7px #3d0808;
+	-webkit-transition: all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+	transition: all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+  }
+  .reload:hover {
+	box-shadow: 0 4px 4px #4c0e0e;
+	-webkit-transform: translateY(1px);
+			transform: translateY(1px);
+  }
+  .reload:active {
+	box-shadow: 0 1px 2px #244b94;
+	-webkit-transform: translateY(2px);
+			transform: translateY(2px);
+  }
+  .reload svg {
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+  }
+  
+  /* -------------------------- /WelcomePage ------------------------------ */
+  
+  
+
+
+
+
+
+
+
+
+
+/* -------------------------- Footer ------------------------------ */
+.botmargin {
+	/* Must match footcontainer2 height */
+  	margin-bottom: 20vh;
+}
+.footcontainer2 {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* Must match botmargin height */
+	height: 20vh;
+	width:100%;
+	background: #222;
+	border-bottom: 1px solid #666;
+	justify-content:center;
+	align-items:center;
+  	z-index:-1;
+}
+/** FooterColorSlide **/
+.bar-anchor{
+	padding: 5vh 8vw; /* adjust sizing of colored bar */
+	margin: 2.5vh 1vw; /* adjust spacing around object + bar */
+	position: relative; /* attaches animated border to object */
+	display:inline-block;
+	height: 100%;
+	overflow:hidden; /* hide bar after animation */
+  /*    border:1px solid #6098FF; */
+  }
+  .bar-anchor span{
+	background:#00002E;
+	width:100%;
+	height: 100%;
+	position:relative;
+	 -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .transition-bar{
+	  position: absolute;
+	  top: 0;
+	  left: 0%;
+	  width: 0;
+	  height: 100%;
+	  background: #ffffff;
+	  z-index:-1;
+  }
+  .bar-anchor:hover span{
+	color: #ffffff!important;
+  }
+  .bar-anchor:hover .transition-bar{
+	width:150%;
+	left:125%;
+	height: 100%;
+	-moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+/** /FooterColorSlide **/
+/* -------------------------- /Footer ------------------------------ */
+
+
+
+
+/* -------------------------- Portfolio.html Specific ------------------------------ */
+
+/* Portfolio Item Width */
+/* .wp {
+	width:30%;
+}
+
+.portfolioitem {
+	position: relative;
+	border-style: double;
+	border-color: black;
+	margin: calc(0.5vw + 0.5vh);
+	width: 30%;
+	transition: 0.6s;
+}
+.portfolioitem:hover {
+	border-color: gray;
+	box-shadow: 
+	1vw 1vw 1vw rgba(228, 228, 228, 0.1),
+	-1vw -1vw 1vw rgba(228, 228, 228, 0.1),
+	1vw -1vw 1vw rgba(228, 228, 228, 0.1),
+	-1vw 1vw 1vw rgba(228, 228, 228, 0.1);
+	transition: 0.6s;
+}
+
+.portfolioitemtextcontainer {
+	position: absolute;
+	top: 75%;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: black;
+	border: double gray;
+	height: 15%;
+}
+.portfolioitemtext {
+	position: absolute;
+	font-size: calc(0.75vw + 0.75vh);
+	color:white;
+
+}
+.portfolioitemimage {
+	width: 100%;
+} */
+/* -------------------------- /Portfolio.html Specific ------------------------------ */
+
+
+/* -------------------------- Contact Page Specific CSS ------------------------------ */
+
+/* .footcontainer3 {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 20vh;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+}
+
+.transition-bar2{
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 0;
+	height: 100%;
+	background: #ffffff;
+}
+.bar-anchor:hover .transition-bar2{
+  width:150%;
+  left:125%;
+  -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+} */
+
+/************************** Contact Form **************************/
+
+/* .wrapper { */
+	/* max-width: 90vw; */
+	/* margin: 5vw auto 0;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+  }
+  
+  form {
+	width: 100%;
+	margin: calc(0.5vw + 0.5vh);
+  }
+  
+  form * { */
+	/* letter-spacing: 0.075em; */
+	/* font-size: calc(1.25vw + 1.25vh);
+	font-weight: 400;
+	cursor: pointer;
+	text-decoration: none;
+  }
+  
+  form .field {
+	width: 100%;
+	position: relative;
+	margin-bottom: 2vh;
+  }
+  
+  form .field label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, #112569, #09691e);
+	width: 100%;
+	height: calc(4vh + 2vw);
+	transition: 333ms ease-in-out;
+	text-align: center;
+	padding: 1vh 0;
+  }
+  
+  form .field input[type="text"],
+  form .field textarea {
+	border: none;
+	width: 100%;
+	height: calc(4vh + 2vw);
+	margin: 0;
+	padding-left: 19.5%;
+	color: #313a3d;
+  }
+  
+  form #msg {
+	height: calc(4vh + 2vw);
+	resize: none;
+	transition: all 333ms ease-in-out;
+	padding-top: 1vh;
+  }
+  form textarea:focus#msg,
+  form textarea:not(:placeholder-shown)#msg {
+	height: calc(8vh + 3vw);
+  }
+  form input[type="text"]:focus + label,
+  form input[type="text"]:not(:placeholder-shown) + label,
+  form textarea:focus + label,
+  form textarea:not(:placeholder-shown) + label,
+  form .field:hover label {
+	width: 18%;
+  }
+  form input[type="submit"] {
+	background: linear-gradient(90deg, #112569, #09691e);
+	-webkit-appearance: none;
+	border: none;
+	position: relative;
+	padding: 1.5vh 3.3vw;
+	transition: all 0.3s ease-in-out;
+  }
+  form input[type="submit"]:hover,
+  form input[type="submit"]:focus {
+	background: #ffffff; 
+  } */
+/* -------------------------- /Contact Page Specific CSS ------------------------------ */
+
+/* -------------------------- General Use Atomic ------------------------------ */
+/* BORDER */
+.bd1 {
+    border:1px;
+}
+.borderplain {
+	border-style:solid;
+	border-color:gray;
+}
+
+
+/* ALIGN */
+.aic {
+    align-items: center;
+}
+.ais {
+    align-items: start;
+}
+
+/* JUSTIFY */
+.jcsb {
+    justify-content: space-between;
+}
+.jcc {
+    justify-content: center;
+}
+.jcs {
+    justify-content: start;
+}
+.jcsa {
+    justify-content: space-around;
+}
+.jcse {
+    justify-content: space-evenly;
+}
+
+
+.w1\/1 {
+	width:100%;
+}
+.h1\/1 {
+	height:100%;
+}
+.m- {
+    margin: calc(0.3vw + 0.3vh);
+}
+.m {
+    margin: 1rem;
+}
+.p {
+    padding: 1rem;
+}
+.pbplus {
+    padding-bottom: 1.66rem;
+}
+
+/* White text shortcut */
+.cwhite {
+	color:white;
+}
+
+/* flexbox shortcut classes */
+.flex {
+	display: flex;
+}
+.column {
+	flex-flow: column;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+
+
+/* TEXT */
+.tdn {
+    text-decoration: none;
+}
+.taj {
+    text-align: justify;
+}
+
+
+.relative {
+	position: relative;
+}
+.bgcolorblack {
+	background-color:#101010;
+}
+/* -------------------------- /General Use Atomic ------------------------------ */
+
+
+
+/* Footer adjustments for small screen sizes */
+@media screen and (max-width: 1024px) { 
+	.footcontainer2 {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 20vh;
+		width:100%;
+		justify-content:center;
+		align-items:center;
+	}
+
+	.transition-bar{
+		position: absolute;
+		top: 0;
+		left: 0%;
+		width: 0;
+		height: 100%;
+		background: #ffffff;
+	}
+	.bar-anchor:hover .transition-bar{
+	width:150%;
+	left:125%;
+	-moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+	}
+}
