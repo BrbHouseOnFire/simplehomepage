@@ -10,15 +10,8 @@ body {
 
 /* -------------------------- Nav ------------------------------ */
 .navorg {
-	/* Header Text */
 	z-index: 2;
-	
-	/* SHIFTS HEADER TEXT ONLY */
-	/* padding: 50vh 0 0 1vw; */
-	/* align-items: start; */
-	/* justify-content: space-between; */
 	justify-content: flex-end;
-	/* To Do: Add padding-right as VH decreases */
 	margin-right: 10vw;
 	
 }
@@ -27,24 +20,45 @@ body {
 	text-decoration: none;
 	text-align: center;
 }
+.navitemcontainer {
+	/* width: 10vw; */
+}
 .navsizing {
-	/* text-align: center; */
-	width:calc(1rem + 6vw);
+	width:calc(1rem + 16vw);
 	height:calc(1rem + 3vw);
-	font-size:calc(0.3rem + 0.75vw + 0.75vh);
+	font-size:calc(0.3rem + 1.5vh);
+}
+@media screen and (max-width: 1920px) {
+	.navsizing {
+		width:calc(1rem + 5vw);
+	}
+}
+@media screen and (max-width: 1600px) {
+	.navsizing {
+		width:calc(1rem + 8vw);
+	}
+}
+@media screen and (max-width: 1280px) {
+	.navsizing {
+		width:calc(1rem + 11vw);
+	}
+}
+@media screen and (max-width: 725px) {
+	.navsizing {
+		width:calc(1rem + 14vw);
+	}
+}
+@media screen and (max-width: 560px) {
+	.navsizing {
+		width:calc(1rem + 17vw);
+	}
 }
 
-/*  NAV HOVER EFFECTS  */
 .navitem {
 	transition: 0.3s;
-	/* margin-left: 3vw;
-	margin-right: 3vw;
-	padding-left: 3vw;
-	padding-right: 3vw; */
 }
 .navitem:hover {
-	/* navigation text */
-	font-size:calc(0.4rem + 1vw + 1vh);
+	font-size:calc(0.4rem + 2.5vh);
 	transition: 0.3s;
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 20%, #000 50%, rgba(0,0,0,.6) 80%);
 	-webkit-mask-size: 200%;
@@ -55,19 +69,16 @@ body {
 /* -------------------------- Shine ------------------------------ */
 /* shine */
 .shine:hover {
-	/* add multi-browser support? */
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
 	-webkit-mask-size: 200%;
 	animation: shine 2s infinite;
   }
   @-webkit-keyframes shine {
 	from {
-		/* add multi-browser support? */
 	  -webkit-mask-position: 150%;
 	}
 	
 	to {
-		/* add multi-browser support? */
 	  -webkit-mask-position: -50%;
 	}
   }
@@ -92,7 +103,7 @@ svg.intro {
 	background: linear-gradient(135deg, #b13b3b, #6b1c1c);
 	/* margin: 25vh 30vw; */
 	width: 70vw;
-	height: 60vh;
+	height: 65vh;
 	/* max-width: 800px; */
 	position: absolute;
 	top: 40%;
@@ -106,7 +117,7 @@ svg.intro {
   }
   svg.intro.go .text {
 	font-family: Arial, sans-serif;
-	font-size: calc(1vh+2vw);
+	font-size: calc(0.5vh);
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
@@ -114,13 +125,46 @@ svg.intro {
   svg.intro.go .text-stroke {
 	fill: none;
 	stroke: #6f2525;
-	stroke-width: calc(.25vh + .5vw);
+	stroke-width: 1vh;
 	stroke-dashoffset: -900;
 	stroke-dasharray: 900;
 	stroke-linecap: butt;
 	stroke-linejoin: round;
 	-webkit-animation: dash 2.5s ease-in-out forwards;
 			animation: dash 2.5s ease-in-out forwards;
+  }
+  @media screen and (max-width: 1920px) {
+	svg.intro.go .text {
+	  font-size: calc(1vh);
+	} 
+  }
+  @media screen and (max-width: 1600px) {
+	svg.intro.go .text {
+	  font-size: calc(2vh);
+	} 
+  }
+  @media screen and (max-width: 1280px) {
+	svg.intro.go .text {
+	  font-size: calc(3vh);
+	} 
+	svg.intro.go .text-stroke {
+		stroke-width: 2vh;
+	}
+  }
+  @media screen and (max-width: 1024px) {
+	svg.intro.go .text {
+	  font-size: calc(4vh);
+	} 
+  }
+  @media screen and (max-width: 720px) { 
+	svg.intro.go .text {
+	  /* font-size: calc(5vh); */
+	}
+  }
+  @media screen and (max-width: 530px) { 
+	svg.intro.go .text {
+	  /* font-size: calc(6vh); */
+	}
   }
   svg.intro.go .text-stroke:nth-child(2) {
 	-webkit-animation-delay: 0.3s;
@@ -163,7 +207,7 @@ svg.intro {
 	border: none;
 	border-radius: 20px;
 	outline: none !important;
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 1.5;
 	padding: 8px 12px;
 	text-transform: uppercase;
