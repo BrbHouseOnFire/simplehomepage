@@ -10,72 +10,75 @@
 </head>
 
 <!-- full flexbox column layout of webpage-->
+<body class="column flex botmargin ">
+    <div id="particles-js">
+        <!-- Plasma background -->
+    </div>
 
-    <!-- Header and body of page -->
-    <body class="column flex botmargin ">
+    <!-- Header Text + Nav bar -->
+    <div class="navorg flex ">
+        <div class="nav flex wrap">
+            <div class="navitemcontainer">
+                <a href="./index.html" class="navitem flex jcc aic tdn cwhite navsizing ">Home</a>
+            </div>
 
-        <!-- Header Text + Nav bar -->
-        <div class="navorg flex ">
-            <!-- <div class="myname">Robert Wojciechowski</div>  -->
-            <div class="nav flex wrap">
-                <div class="navitemcontainer">
-                    <a href="./index.html" class="navitem flex jcc aic tdn cwhite navsizing ">Home</a>
-                </div>
+            <div class="navitemcontainer">
+                <a href="./portfolio.html" class="navitem flex jcc aic tdn cwhite navsizing ">Portfolio</a> 
+            </div>
 
-                <div class="navitemcontainer">
-                    <a href="./portfolio.html" class="navitem flex jcc aic tdn cwhite navsizing ">Portfolio</a> 
-                </div>
-
-                <div class="navitemcontainer">
-                    <a href="https://github.com/BrbHouseOnFire" class="navitem flex jcc aic tdn cwhite navsizing ">Github</a>
-                </div>
-
-                <!-- <a href="./contact.html" class="navitem flex jcc tdn cwhite navsizing ">Contact</a> -->
+            <div class="navitemcontainer">
+                <a href="https://github.com/BrbHouseOnFire" class="navitem flex jcc aic tdn cwhite navsizing ">Github</a>
             </div>
         </div>
+    </div>
 
-        <!-- Main page text -->
-        <main class="body-main">
-            <svg class="intro go" viewBox="0 0 150 50">
-                
-                <text text-anchor="start" x="10" y="7" class="text text-stroke" clip-path="url(#text1)">Wojo</text>
-                <text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text2)">Codes</text>
-                <text text-anchor="start" x="10" y="53" class="text text-stroke" clip-path="url(#text3)">Here</text>
-                <text text-anchor="start" x="10" y="7" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Wojo</text>
-                <text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Codes</text>
-                <text text-anchor="start" x="10" y="53" class="text text-stroke text-stroke-2" clip-path="url(#text3)">Here</text>
-                
-                <defs>
-                    <clipPath id="text1">
-                        <text text-anchor="start" x="10" y="7" class="text">Wojo</text>
-                    </clipPath>
-                    <clipPath id="text2">
-                        <text text-anchor="start" x="10" y="30" class="text">Codes</text>
-                    </clipPath>
-                    <clipPath id="text3">
-                        <text text-anchor="start" x="10" y="53" class="text">Here</text>
-                    </clipPath>
-                </defs>
+    <!-- Main page text -->
+    <main class="body-main">
+        <svg class="intro" viewBox="0 0 150 50">
+            
+            <text text-anchor="start" x="10" y="7" class="text text-stroke" clip-path="url(#text1)">Wojo</text>
+            <text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text2)">Codes</text>
+            <text text-anchor="start" x="10" y="53" class="text text-stroke" clip-path="url(#text3)">Here</text>
+            <text text-anchor="start" x="10" y="7" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Wojo</text>
+            <text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Codes</text>
+            <text text-anchor="start" x="10" y="53" class="text text-stroke text-stroke-2" clip-path="url(#text3)">Here</text>
+            
+            <defs>
+                <clipPath id="text1">
+                    <text text-anchor="start" x="10" y="7" class="text">Wojo</text>
+                </clipPath>
+                <clipPath id="text2">
+                    <text text-anchor="start" x="10" y="30" class="text">Codes</text>
+                </clipPath>
+                <clipPath id="text3">
+                    <text text-anchor="start" x="10" y="53" class="text">Here</text>
+                </clipPath>
+            </defs>
 
-            </svg>
+        </svg>
 
-            <div class="reload-container">
-                <button class="reload">
-                    reload
-                </button>
-            </div>
-        </main>
-    </body>
+        <div class="reload-container">
+            <button class="reload">
+                reload
+            </button>
+        </div>
+    </main>
 
-    <!-- Footer (Absolute positioning) -->
-    <footer class="footcontainer2 flex">
-            <a class="bar-anchor" 
-            href="https://www.linkedin.com/in/robertwojciechowskiwmu/">
-            <img class="anchor-image" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" 
-            alt="LinkedInLogo" /> 
-            <div class="transition-bar"></div>
-        </a>
-    </footer>
+</body>
+
+<!-- Footer (Absolute positioning) -->
+<!-- <footer class="footcontainer2 flex">
+        <a class="bar-anchor" 
+        href="https://www.linkedin.com/in/robertwojciechowskiwmu/">
+        <img class="anchor-image" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" 
+        alt="LinkedInLogo" /> 
+        <div class="transition-bar"></div>
+    </a>
+</footer> -->
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/js/reload.js"></script>
+<script src="./assets/js/plasmaParticles.js"></script>
+<script src="./assets/js/plasmaRepulsion.js"></script>
 </html>
