@@ -38,9 +38,8 @@ body {
 	text-decoration: none;
 	text-align: center;
 }
-.navitemcontainer {
-	/* width: 10vw; */
-}
+/* .navitemcontainer {
+} */
 .navsizing {
 	width:calc(1rem + 16vw);
 	height:calc(1rem + 3vw);
