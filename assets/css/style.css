@@ -136,7 +136,7 @@ svg.intro {
   svg.intro.go .text-stroke {
 	fill: none;
 	stroke: #6f2525;
-	stroke-width: 2vh;
+	stroke-width: 1vh;
 	stroke-dasharray: 900; /* Length of Dash line */
 	stroke-dashoffset: -175; /* position in cycle */
 	stroke-linecap: butt;
@@ -168,16 +168,14 @@ svg.intro {
 	  font-size: calc(5vh);
 	} 
   }
-  @media screen and (max-width: 720px) { 
+  /* @media screen and (max-width: 720px) { 
 	svg.intro.go .text {
-	  /* font-size: calc(5vh); */
 	}
   }
   @media screen and (max-width: 530px) { 
 	svg.intro.go .text {
-	  /* font-size: calc(6vh); */
 	}
-  }
+  } */
   svg.intro.go .text-stroke:nth-child(2) {
 	  /* text line 2 start delay */
 	animation-delay: .5s;
@@ -247,123 +245,6 @@ svg.intro {
 /* -------------------------- /IndexBody ------------------------------ */
 
 
-
-
-
-
-
-
-
-/* -------------------------- Contact Page Specific CSS ------------------------------ */
-
-/* .footcontainer3 {
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 20vh;
-	width:100%;
-	justify-content:center;
-	align-items:center;
-}
-
-.transition-bar2{
-	position: absolute;
-	top: 0;
-	left: 0%;
-	width: 0;
-	height: 100%;
-	background: #ffffff;
-}
-.bar-anchor:hover .transition-bar2{
-  width:150%;
-  left:125%;
-  -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-  -webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-} */
-
-/************************** Contact Form **************************/
-
-/* .wrapper { */
-	/* max-width: 90vw; */
-	/* margin: 5vw auto 0;
-	width: 70%;
-	display: flex;
-	justify-content: center;
-  }
-  
-  form {
-	width: 100%;
-	margin: calc(0.5vw + 0.5vh);
-  }
-  
-  form * { */
-	/* letter-spacing: 0.075em; */
-	/* font-size: calc(1.25vw + 1.25vh);
-	font-weight: 400;
-	cursor: pointer;
-	text-decoration: none;
-  }
-  
-  form .field {
-	width: 100%;
-	position: relative;
-	margin-bottom: 2vh;
-  }
-  
-  form .field label {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(90deg, #112569, #09691e);
-	width: 100%;
-	height: calc(4vh + 2vw);
-	transition: 333ms ease-in-out;
-	text-align: center;
-	padding: 1vh 0;
-  }
-  
-  form .field input[type="text"],
-  form .field textarea {
-	border: none;
-	width: 100%;
-	height: calc(4vh + 2vw);
-	margin: 0;
-	padding-left: 19.5%;
-	color: #313a3d;
-  }
-  
-  form #msg {
-	height: calc(4vh + 2vw);
-	resize: none;
-	transition: all 333ms ease-in-out;
-	padding-top: 1vh;
-  }
-  form textarea:focus#msg,
-  form textarea:not(:placeholder-shown)#msg {
-	height: calc(8vh + 3vw);
-  }
-  form input[type="text"]:focus + label,
-  form input[type="text"]:not(:placeholder-shown) + label,
-  form textarea:focus + label,
-  form textarea:not(:placeholder-shown) + label,
-  form .field:hover label {
-	width: 18%;
-  }
-  form input[type="submit"] {
-	background: linear-gradient(90deg, #112569, #09691e);
-	-webkit-appearance: none;
-	border: none;
-	position: relative;
-	padding: 1.5vh 3.3vw;
-	transition: all 0.3s ease-in-out;
-  }
-  form input[type="submit"]:hover,
-  form input[type="submit"]:focus {
-	background: #ffffff; 
-  } */
-/* -------------------------- /Contact Page Specific CSS ------------------------------ */
 
 /* -------------------------- General Use Atomic ------------------------------ */
 /* BORDER */
