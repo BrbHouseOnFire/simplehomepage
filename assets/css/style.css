@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,100,400);
 
 body {
-	height: 80vh;
+	height: 100vh;
 	/* padding: 0; */
 	/* margin: 0; */
-	background: #672626;
+	background: #222;
 	font-family: "Ubuntu", Arial, sans-serif;
   }
 
@@ -106,6 +107,7 @@ body {
 .body-main {
 	width: 100vw;
 	height: 100vh;
+	/* margin-bottom: 20vh; */
 }
 
 svg.intro {
@@ -245,120 +247,11 @@ svg.intro {
 /* -------------------------- /IndexBody ------------------------------ */
 
 
-/* -------------------------- Footer ------------------------------ */
-.botmargin {
-	/* Must match footcontainer2 height */
-	/* height: 100vh; */
-	/* z-index: 1; */
-  	margin-bottom: 20vh;
-}
-.footcontainer2 {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	/* Must match botmargin height */
-	height: 20vh;
-	width:100%;
-	background: #222;
-	border-bottom: 1px solid #666;
-	justify-content:center;
-	align-items:center;
-  	z-index:-1;
-}
-/** FooterColorSlide **/
-.bar-anchor{
-	padding: 2.5vh 2vw; /* adjust sizing of colored bar */
-	margin: 1.25vh 1.25vw; /* adjust spacing around object + bar */
-	position: relative; /* attaches animated border to object */
-	display:inline-block;
-	height: 100%;
-	overflow:hidden; /* hide bar after animation */
-  }
-  .bar-anchor .anchor-image{
-	background: #222;
-	padding-left: 1vw;
-	padding-right: 1vw;
-	width:100%;
-	height: 100%;
-	position:relative;
-	 -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-	transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-  }
-  .transition-bar{
-	  position: absolute;
-	  top: 0;
-	  left: 0%;
-	  width: 0;
-	  height: 100%;
-	  background: #ffffff;
-	  z-index:-1;
-  }
-  .bar-anchor:hover span{
-	color: #ffffff!important;
-  }
-  .bar-anchor:hover .transition-bar{
-	width:150%;
-	left:125%;
-	height: 100%;
-	-moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-	-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-	-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-	transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-  }
-/** /FooterColorSlide **/
-/* -------------------------- /Footer ------------------------------ */
 
 
 
 
-/* -------------------------- Portfolio.html Specific ------------------------------ */
 
-/* Portfolio Item Width */
-.wp {
-	width:30%;
-}
-
-.portfolioitem {
-	position: relative;
-	border-style: double;
-	border-color: black;
-	margin: calc(0.5vw + 0.5vh);
-	width: 30%;
-	transition: 0.6s;
-}
-.portfolioitem:hover {
-	border-color: gray;
-	box-shadow: 
-	1vw 1vw 1vw rgba(228, 228, 228, 0.1),
-	-1vw -1vw 1vw rgba(228, 228, 228, 0.1),
-	1vw -1vw 1vw rgba(228, 228, 228, 0.1),
-	-1vw 1vw 1vw rgba(228, 228, 228, 0.1);
-	transition: 0.6s;
-}
-
-.portfolioitemtextcontainer {
-	position: absolute;
-	top: 75%;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-	background-color: black;
-	border: double gray;
-	height: 15%;
-}
-.portfolioitemtext {
-	position: absolute;
-	font-size: calc(0.75vw + 0.75vh);
-	color:white;
-
-}
-.portfolioitemimage {
-	width: 100%;
-}
-/* -------------------------- /Portfolio.html Specific ------------------------------ */
 
 
 /* -------------------------- Contact Page Specific CSS ------------------------------ */
