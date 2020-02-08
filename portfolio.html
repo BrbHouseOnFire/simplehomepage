@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/portfolioStyle.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/portfolioItem.css">
 </head>
 
 
@@ -42,115 +43,69 @@
                 <!-- Main page text -->
                 <main class="portfolio-body-main">
                         <!-- Portfolio Items -->
-                        <div class="flex wrap pbplus jcsa aic">
-                                <a href="https://robin-should.herokuapp.com/" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/robinshouldlogo3.png" 
-                                        alt=""/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Online Budgeting
-                                                </div>
-                                        </div>
-                                        </a>
-                                <a href="https://brbhouseonfire.github.io/WeatherDashboard/" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/weather.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Responsive Weather Dashboard
-                                                </div>
-                                        </div>
-                                </a>
-                                <a href="https://brbhouseonfire.github.io/spotlight/" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/spotlight-logo2.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Spotlight - Streaming Search Engine
-                                                </div>
-                                        </div>
-                                        </a>
-                                <a href="https://github.com/BrbHouseOnFire/EmployeeTracker" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/employeetracker.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Employee Tracker (Inquirer)
-                                                </div>
-                                        </div>
-                                </a>
-                                <a href="https://github.com/BrbHouseOnFire/DevProfileGenerator" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/devprof.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Developer Profile to PDF (Inquirer)
-                                                </div>
-                                        </div>
-                                </a>
-                                <a href="https://brbhouseonfire.github.io/DayPlanner/" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/notepad.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Online Day Planner
-                                                </div>
-                                        </div>
-                                        </a>
-                                <!-- <a href="https://github.com/BrbHouseOnFire" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/gitlogo.png" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        GitHub
-                                                </div>
-                                        </div>
-                                </a> -->
-                                <!-- <a href="" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/eclipse2.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        I don't have any items yet
-                                                </div>
-                                        </div>
-                                </a>
-                                <a href="" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/spherezicus.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Portfolio Item Name
-                                                </div>
-                                        </div>
-                                </a>
-                                <a href="" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/spherezicus.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Portfolio Item Name
-                                                </div>
-                                        </div>
-                                </a>
-                                <a href="" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/spherezicus.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Portfolio Item Name
-                                                </div>
-                                        </div>
-                                </a>
-                                <a href="" class="portfolioitem wp">
-                                        <img class=" portfolioitemimage" src="./assets/images/spherezicus.jpg" 
-                                        alt="Image created with Apophysis"/>
-                                        <div class="portfolioitemtextcontainer flex jcc aic">
-                                                <div class="portfolioitemtext">
-                                                        Portfolio Item Name
-                                                </div>
-                                        </div>
-                                </a> -->
+                        <!-- NEW -->
+
+                        <div class="grid">
+                                <figure class="effect-sadie pngFix">
+                                        <img src="./assets/images/robinshouldlogo3.png" alt="RobinShould logo"/>
+                                        <figcaption>
+                                                <!-- <h2>Holy <span>Sadie</span></h2> -->
+                                                <p>CMS for online budgeting.</p>
+                                                <a href="https://robin-should.herokuapp.com/">Enter App</a>
+                                        </figcaption>
+                                </figure>
+                                <figure class="effect-sadie darkMode">
+                                        <img src="./assets/images/weather.jpg" alt=""/>
+                                        <figcaption>
+                                                <h2>Weather <span>Dashboard</span></h2>
+                                                <p>Responsive design for <br>API powered weather</p>
+                                                <a href="https://brbhouseonfire.github.io/WeatherDashboard/">Enter App</a>
+                                        </figcaption>
+                                </figure>
+                                <figure class="effect-sadie lightMode">
+                                        <img src="./assets/images/spotlight-logo2.jpg" alt=""/>
+                                        <figcaption>
+                                                <h2><span>Spotlight</span></h2>
+                                                <p>Universal Streaming Search Engine</p>
+                                                <a href="https://brbhouseonfire.github.io/spotlight/">Enter App</a>
+                                        </figcaption>
+                                </figure>
+                                <figure class="effect-sadie darkMode">
+                                        <img src="./assets/images/employeetracker.jpg" alt=""/>
+                                        <figcaption>
+                                                <h2>Employee Tracker (Inquirer) <span>BOLD</span></h2>
+                                                <p>Employee Tracker (Inquirer) <br>Line2</p>
+                                                <a href="https://github.com/BrbHouseOnFire/EmployeeTracker">Enter App</a>
+                                        </figcaption>
+                                </figure>
+                                <figure class="effect-sadie darkMode">
+                                        <img src="./assets/images/devprof.jpg" alt=""/>
+                                        <figcaption>
+                                                <h2>Developer Profile to PDF (Inquirer) <span>BOLD</span></h2>
+                                                <p>Developer Profile to PDF (Inquirer) <br>Line2</p>
+                                                <a href="https://github.com/BrbHouseOnFire/DevProfileGenerator">Enter App</a>
+                                        </figcaption>
+                                </figure>
+                                <figure class="effect-sadie darkMode">
+                                        <img src="./assets/images/notepad.jpg" alt=""/>
+                                        <figcaption>
+                                                <h2>Online Day Planner <span>BOLD</span></h2>
+                                                <p>Online Day Planner <br>Line2</p>
+                                                <a href="https://brbhouseonfire.github.io/DayPlanner/">Enter App</a>
+                                        </figcaption>
+                                </figure>
+                        </div>
+
+
+
+
+
+                        <!-- OLD -->
+
+
+
+
+
                         </div>
                 </main>
         </body>

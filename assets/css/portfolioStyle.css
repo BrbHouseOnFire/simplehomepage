@@ -102,8 +102,9 @@ body {
 
 .portfolio-body-main {
 	width: 100vw;
-	height: 80vh;
-	/* margin-bottom: 20vh; */
+	height: 100vh;
+	background: #222;
+	margin-bottom: 20vh;
 }
 
 /* Portfolio Item Width */
