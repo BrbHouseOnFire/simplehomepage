@@ -4,7 +4,6 @@ body {
 }
 .arranger {
     height: 100vh;
-	background: #222;
     margin-bottom: 20vh;
 }
 
@@ -79,7 +78,6 @@ body {
 /* -------------------------- /Nav ------------------------------ */
 
 /* -------------------------- Shine ------------------------------ */
-/* shine */
 .shine:hover {
 	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
 	-webkit-mask-size: 200%;
@@ -98,26 +96,20 @@ body {
 
 
 /* -------------------------- BODY ------------------------------ */
-.newGrid {
-	
-}
-
 .portfolio-body-main {
-	/* background: #2f3238; */
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
 	font-family: 'Raleway', Arial, sans-serif;
+	margin-bottom: 20vh;
+	padding-bottom: 3vh;
+	background-color: #222;
 }
 
-
 /* -------------------------- /BODY ------------------------------ */
-
 /* -------------------------- Footer ------------------------------ */
 .botmargin {
 	/* Must match footcontainer2 height */
-	/* height: 100vh; */
-	/* z-index: 1; */
   	margin-bottom: 20vh;
 }
 .footcontainer2 {
@@ -134,6 +126,9 @@ body {
 	align-items:center;
   	z-index:-1;
 }
+.anchor-image {
+	opacity: 1;
+}
 /** FooterColorSlide **/
 .bar-anchor{
 	padding: 2.5vh 2vw; /* adjust sizing of colored bar */
@@ -144,7 +139,7 @@ body {
 	overflow:hidden; /* hide bar after animation */
   }
   .bar-anchor .anchor-image{
-	background: rgb(0, 1, 43);
+	background: rgb(0, 0, 24);
 	padding-left: 1vw;
 	padding-right: 1vw;
 	width:100%;
