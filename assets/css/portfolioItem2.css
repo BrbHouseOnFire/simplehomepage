@@ -47,7 +47,7 @@ figure {
 	/* max-width: 45%; */
 	/* max-height: 360px; */
 	max-height: 35%;
-	max-width: 45%;
+	max-width: 30%;
 	/* width: 48%; */
 	text-align: center;
     cursor: pointer;
@@ -71,8 +71,10 @@ img {
 	/* object-fit: cover; */
 	object-fit: contain;
 	min-height: 100%;
+	/* min-width: 100%; */
 	max-width: 100%;
 	opacity: 0.8;
+    background: rgb(8, 8, 8);
 }
 .cover {
 	object-fit: cover;
@@ -92,6 +94,12 @@ figcaption {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+/* .lightMode {
+	color: rgb(201, 201, 201);
+}
+.darkMode {
+	color: rgb(187, 187, 187);
+} */
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
