@@ -211,7 +211,7 @@ svg.intro {
   }
   .reload {
 	position: absolute;
-	bottom: calc(20vh);
+	bottom: 25vh;
 	left: 19vw;
 	background: rgb(211, 211, 211);
 	border: none;
@@ -242,6 +242,38 @@ svg.intro {
 	top: -2px;
   }
   
+  .disableParticles {
+	position: absolute;
+	bottom: 19vh;
+	left: 19vw;
+	background: rgb(211, 211, 211);
+	border: none;
+	border-radius: 20px;
+	outline: none !important;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 8px 12px;
+	z-index: 10;
+	cursor: pointer;
+	box-shadow: 0 6px 7px #3d0808;
+	-webkit-transition: all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+	transition: all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+  }
+  .disableParticles:hover {
+	box-shadow: 0 4px 4px #4c0e0e;
+	-webkit-transform: translateY(1px);
+			transform: translateY(1px);
+  }
+  .disableParticles:active {
+	box-shadow: 0 1px 2px #244b94;
+	-webkit-transform: translateY(2px);
+			transform: translateY(2px);
+  }
+  .disableParticles svg {
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+  }
 /* -------------------------- /IndexBody ------------------------------ */
 
 
