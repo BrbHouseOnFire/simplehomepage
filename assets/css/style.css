@@ -84,6 +84,73 @@ body {
 	-webkit-mask-size: 200%;
 	animation: shine 1s infinite;
 }
+
+
+/* -------------------------- buttonBorder ------------------------------ */
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.buttonEffect {
+  font-family: 'Raleway';
+  text-align: center;
+  font-weight: 600;
+  padding: .5em .8em;
+  position: relative;
+  font-size: 20px;
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(190, 190, 190);
+
+}
+  
+.buttonEffect * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+  
+.buttonEffect::before,
+.buttonEffect::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.buttonEffect::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-right: 3px solid rgb(59, 59, 59);
+  border-top: 3px solid rgb(79, 79, 79);
+  transform: translate(-100%, 50%);
+}
+
+.buttonEffect:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid rgb(79, 79, 79);
+  border-bottom: 3px solid rgb(59, 59, 59);
+  transform: translate(100%, -50%)
+}
+
+.buttonEffect:hover:before,
+.buttonEffect:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.buttonEffect:hover {
+  color: rgb(212, 212, 212);
+}
+
+/* -------------------------- /buttonBorder ------------------------------ */
 /* -------------------------- /Nav ------------------------------ */
 
 /* -------------------------- Shine ------------------------------ */
