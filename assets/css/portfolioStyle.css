@@ -5,6 +5,7 @@ body {
 .arranger {
     height: 100vh;
     margin-bottom: 20vh;
+	background: rgb(24, 24, 24);
 }
 
 /* -------------------------- NAV ------------------------------ */
@@ -88,7 +89,7 @@ body {
 	font-family: 'Raleway', Arial, sans-serif;
 	margin-bottom: 20vh;
 	padding-bottom: 3vh;
-	background-color: #222;
+	background: rgb(24, 24, 24);
 }
 
 /* -------------------------- /BODY ------------------------------ */
