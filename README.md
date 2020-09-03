@@ -1,4 +1,4 @@
-# A straight-forward server-less homepage
-## Multi-Page
+# Server-less homepage
+## Pages:
 * Artistic Landing Page
-* Straight-forward Portfolio Page
+* Portfolio Page
